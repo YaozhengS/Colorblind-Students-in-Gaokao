@@ -6,52 +6,52 @@
 
 @font-face{
     font-family: "baskervville-r";
-    src: url("typefaces/Baskervville/Baskervville-Regular.ttf") format("truetype");
+    src: url("../typefaces/Baskervville/Baskervville-Regular.ttf") format("truetype");
 }
 
 @font-face{
     font-family: "baskervville-i";
-    src: url("typefaces/Baskervville/Baskervville-Italic.ttf") format("truetype");
+    src: url("../typefaces/Baskervville/Baskervville-Italic.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "openBaskerville-r";
-    src: url("typefaces/OpenBaskerville/OpenBaskerville-0.0.53.otf") format("opentype");
+    src: url("../typefaces/OpenBaskerville/OpenBaskerville-0.0.53.otf") format("opentype");
 }
 
 @font-face {
     font-family: "libreBaskerville-b";
-    src: url("typefaces/Libre_Baskerville/LibreBaskerville-Bold.ttf") format("truetype");
+    src: url("../typefaces/Libre_Baskerville/LibreBaskerville-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "sourceSongti-r";
-    src: url("typefaces/SourceSongti/SourceHanSerifSC-Regular.otf") format("opentype");
+    src: url("../typefaces/SourceSongti/SourceHanSerifSC-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: "sourceSongti-m";
-    src: url("typefaces/SourceSongti/SourceHanSerifSC-Medium.otf") format("opentype");
+    src: url("../typefaces/SourceSongti/SourceHanSerifSC-Medium.otf") format("opentype");
 }
 
 @font-face {
     font-family: "sourceSongti-sb";
-    src: url("typefaces/SourceSongti/SourceHanSerifSC-SemiBold.otf") format("opentype");
+    src: url("../typefaces/SourceSongti/SourceHanSerifSC-SemiBold.otf") format("opentype");
 }
 
 @font-face {
     font-family: "sourceSongti-b";
-    src: url("typefaces/SourceSongti/SourceHanSerifSC-Bold.otf") format("opentype");
+    src: url("../typefaces/SourceSongti/SourceHanSerifSC-Bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: "sourceHeiti-r";
-    src: url("typefaces/SourceHeiti/SourceHanSansSC-Normal.otf") format("opentype");
+    src: url("../typefaces/SourceHeiti/SourceHanSansSC-Normal.otf") format("opentype");
 }
 
 @font-face{
     font-family: "sourceHeiti-h";
-    src: url("typefaces/SourceHeiti/SourceHanSansSC-Heavy.otf") format("opentype");
+    src: url("../typefaces/SourceHeiti/SourceHanSansSC-Heavy.otf") format("opentype");
 }
 
 body{
