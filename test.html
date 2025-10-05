@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Locomotive Scroll Demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      gap: 40px;
+      padding: 100px;
+    }
+
+    .main {
+      flex: 2;
+    }
+
+    .sidebar {
+      flex: 1;
+      background: #eee;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 200px;
+    }
+
+    h1, p {
+      margin: 0 0 30px;
+    }
+  </style>
+</head>
+<body data-scroll-container>
+
+  <div class="container" data-scroll-section>
+    
+    <!-- Sticky Sidebar -->
+    <div class="sidebar"
+         data-scroll
+         data-scroll-sticky
+         data-scroll-target=".container">
+      <h3>Sticky Sidebar</h3>
+      <p>This stays pinned as you scroll through this section.</p>
+    </div>
+
+    <!-- Main Scroll Content -->
+    <div class="main">
+      <section>
+        <h1 data-scroll data-scroll-speed="1">This title scrolls normally</h1>
+        <p data-scroll data-scroll-speed="3">This paragraph scrolls faster</p>
+        <p data-scroll data-scroll-speed="3">This paragraph scrolls faster</p>
+        <p data-scroll data-scroll-speed="3">This paragraph scrolls faster</p>
+        <p data-scroll data-scroll-speed="3">This paragraph scrolls faster</p>
+        <p data-scroll data-scroll-speed="3">This paragraph scrolls faster</p>
+      </section>
+
+      <section>
+        <h1 data-scroll data-scroll-speed="-1">This title scrolls slower (negative)</h1>
+        <p data-scroll data-scroll-speed="0.5">This paragraph scrolls slower</p>
+        <p data-scroll data-scroll-speed="0.5">This paragraph scrolls slower</p>
+        <p data-scroll data-scroll-speed="0.5">This paragraph scrolls slower</p>
+        <p data-scroll data-scroll-speed="0.5">This paragraph scrolls slower</p>
+        <p data-scroll data-scroll-speed="0.5">This paragraph scrolls slower</p>        
+      </section>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <script>
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+    });
+  </script>
+</body>
+</html>

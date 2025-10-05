@@ -1,0 +1,466 @@
+@import "tailwindcss";
+
+:root {
+  --spacing: 1px;
+}
+
+@font-face{
+    font-family: "baskervville-r";
+    src: url("/typefaces/Baskervville/Baskervville-Regular.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "baskervville-i";
+    src: url("/typefaces/Baskervville/Baskervville-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "openBaskerville-r";
+    src: url("/typefaces/OpenBaskerville/OpenBaskerville-0.0.53.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "libreBaskerville-b";
+    src: url("/typefaces/Libre_Baskerville/LibreBaskerville-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "sourceSongti-r";
+    src: url("/typefaces/SourceSongti/SourceHanSerifSC-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "sourceSongti-m";
+    src: url("/typefaces/SourceSongti/SourceHanSerifSC-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "sourceSongti-sb";
+    src: url("/typefaces/SourceSongti/SourceHanSerifSC-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "sourceSongti-b";
+    src: url("/typefaces/SourceSongti/SourceHanSerifSC-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "sourceHeiti-r";
+    src: url("/typefaces/SourceHeiti/SourceHanSansSC-Normal.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "sourceHeiti-h";
+    src: url("/typefaces/SourceHeiti/SourceHanSansSC-Heavy.otf") format("opentype");
+}
+
+body{
+    background-color: #FFF0CC;
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    height: 205vh;
+    width: 100vw;
+}
+
+h1{
+    font-family: openBaskerville-r;
+    font-size: 2.25rem;
+    font-weight: normal;
+    line-height: normal;
+    color: #DC4040;
+    margin: 0;
+}
+
+h2{
+    font-family: sourceSongti-b;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: normal;
+    color: #DC4040;
+    margin: 0;
+}
+
+/* Navigation Bar Elements */
+
+.navBar{
+    position: fixed;
+    display: flex;
+    height: 118px;
+    width: calc(100vw - 72px);
+    top: 0;
+    left: 0;
+    margin: 0 36px 0 36px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.navBarTitleEN{
+    font-family: openBaskerville-r;
+    font-weight: normal;
+    line-height: normal;
+    color: #DC4040;
+    font-size: 2.25rem;
+    letter-spacing: 1.08px;
+    margin: 42px 0 0 30px;
+    transition-duration: 0.55s;
+    transition-timing-function: ease;
+}
+
+.navBarTitleCH{
+    font-family: sourceSongti-b;
+    font-weight: normal;
+    line-height: normal;
+    color: #DC4040;
+    font-size: 1.5rem;
+    letter-spacing: 23.28px;
+    margin: 46.5px 0 0 27px;
+    transition-duration: 0.55s;
+    transition-timing-function: ease;
+}
+
+#pageTitle1, #pageTitle2{
+    opacity: 0;
+}
+
+@media (width < 1690px){
+    #pageTitle2{
+        display: none;
+    }
+}
+
+a{
+    pointer-events: auto;
+}
+
+.spacer{
+    flex: 1;
+}
+
+.navBarButton1, .navBarButton2{
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    padding: 22px 30px 0 30px;
+    margin-left: 36px;
+    align-items: center;
+    pointer-events: auto;
+    border-bottom: 3.5px solid #DC4040;
+    background-color: #FFFBF0;
+    transition-duration: 0.15s;
+}
+
+.navBarButton1:hover, .navBarButton2:hover{
+    border-bottom: 4.5px solid #4D3636;
+    transition-duration: 0.15s;
+}
+
+.navBarButton1:hover .navButtonTextCH{
+    color: #4D3636;
+    transition-duration: 0.15s;
+}
+
+.navBarButton1:hover .navButtonTextEN{
+    color: #4D3636;
+    transition-duration: 0.15s;
+}
+
+.navBarButton2:hover .navButtonTextCH{
+    color: #4D3636;
+    transition-duration: 0.15s;
+}
+
+.navBarButton2:hover .navButtonTextEN{
+    color: #4D3636;
+    transition-duration: 0.15s;
+}
+
+.navButtonTextCH{
+    font-size: 1.25rem;
+    letter-spacing: 25px;
+    margin: -4px -25px 0 0;
+}
+
+/*functionality uncertain*/
+/* #ckzl{
+    letter-spacing: 27px;
+    margin: -4px -27px 0 0;
+} */
+
+a{
+    text-decoration: none;
+}
+
+/* Opening Page */
+
+.openingPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.identityTitle{
+    position: relative;
+    width: 1170px;
+    height: 157px;
+    color: #DC4040;
+}
+
+.titleRedline{
+    position: relative;
+    top: 0;
+    left: 6px;
+    width: 1156px;
+    height: 2px;
+    background-color: #DC4040;
+}
+
+#idt1{
+    position: absolute;
+    top: 35px;
+    left: 2px;
+    font-size: 2.125rem;
+}
+
+#idt2{
+    position: absolute;
+    top: 38px;
+    left: 292px;
+    font-family: sourceSongti-m;
+    font-size: 1.5rem;
+    letter-spacing: 18px;
+    color: black;
+}
+
+#idt3{
+    position: absolute;
+    top: 71px;
+    left: 0;
+    font-size: 4rem;
+}
+
+#idt4{
+    position: absolute;
+    top: 14px;
+    left: 590px;
+    font-size: 8rem;
+}
+
+.tips{
+    position: absolute;
+    bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: librebaskerville-b;
+    font-size: 1.25rem;
+    color: #DC4040;
+    text-align: center;
+}
+
+.downArrow{
+    position: relative;
+    font-family: sourceSongti-m;
+    font-size: 3rem;
+    animation: movedown 3s infinite;
+}
+
+@keyframes pulse {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.25);}
+    100%{transform: scale(1);}
+}
+
+@keyframes movedown {
+    0%{top: 0px;}
+    67%{top: 18px;}
+    70%{top: 18px;}
+    100%{top: 0px;}
+}
+
+/* narrative pages */
+
+.snapWrapper{
+    height: 165vh;
+    width: 100vw;
+}
+
+.snapWrapperFlex{
+    height: 225vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.scrollDummy{
+    position: absolute;
+    height: 225vh;
+    width: 100vw;
+}
+
+.contentWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.textHalf{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    height: 37.5vh;
+    width: 1520px;
+    font-family: baskervville-r;
+    font-size: 1.75rem;
+    line-height: 2.75rem;
+    color: black;
+}
+
+@media (width < 1520px){
+    .textHalf br{
+        display: none;
+    }
+    .textHalf{
+        width: 90%;
+    }
+}
+
+sup{
+    margin-left: 3px;
+    color: #DC4040;
+    font-family: sourceSongti-r;
+}
+
+.graphicHalf{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 62.5vh;
+    width: 100vw;
+}
+
+.quote{
+    font-family: baskervville-i;
+    font-size: 2rem;
+}
+
+@layer components{
+    .note{
+        font-family: baskervville-r;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        margin-top: -1px;
+    }
+}
+
+/* data visualization */
+
+.dots{
+    opacity: 0;
+    transition-duration: 1.1s;
+}
+
+.scrollYindicator{
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    font-size: 3rem;
+    color: green;
+}
+
+.dropdown{
+    font-size: 1.75rem;
+    font-family: baskervville-r;
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* ending page */
+
+.credits{
+    width: 1110px;
+    font-family: baskervville-r;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    text-align: justify;
+    color: black;
+}
+
+.highlight{
+    font-family: libreBaskerville-b;
+    color: #DC4040;
+}
+
+p + p{
+    margin-top: 1.5rem;
+}
+
+.indicator{
+    font-family: libreBaskerville-b;
+    font-size: 1.5rem;
+    color: #DC4040;
+}
+
+/* restart button */
+
+.restartButton{
+    position: fixed;
+    left: 66px;
+    bottom: 41px;
+    width: 197px;
+    height: 114px;
+    border: 2px solid #DC4040;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    transition-duration: 0.15s;
+    opacity: 0;
+}
+
+.restartButton:hover{
+    width: 199px;
+    height: 116px;
+    border: 3px solid #4D3636;
+    transition-duration: 0.15s;
+}
+
+.restartButton:hover .rsb1{
+    color: #4D3636;
+    transition-duration: 0.15s;
+}
+
+.restartButton:hover .rsb2{
+    color: #4D3636;
+    transition-duration: 0.15s;
+}
+
+.rsb1{
+    margin-top: -4px;
+    font-family: sourceSongti-b;
+    font-size: 1.5rem;
+    line-height: normal;
+    color: #DC4040;
+    transition-duration: 0.15s;
+}
+
+.rsb2{
+    margin-top: -4px;
+    font-family: openBaskerville-r;
+    font-size: 2rem;
+    line-height: normal;
+    color: #DC4040;
+    transition-duration: 0.15s;
+}

@@ -1,0 +1,235 @@
+.navBarTitleEN{
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.navBarTitleCH{
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+/* ref page elements */
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.navBarSpacer{
+    position: relative;
+    width: 100vw;
+    height: 118px;
+}
+
+.pageBottomSpacer{
+    position: relative;
+    width: 100vw;
+    height: 236px
+}
+
+.masterContainer{
+    position: relative;
+    padding: 0 66px 0 66px;
+    width: 100vw;
+}
+
+.titleContainer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.entryContainer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2.5px solid #DC4040;
+}
+
+.entryContainer + .titleContainer{
+    padding-top: 22px;
+}
+
+.sectionTitleEN{
+    font-family: baskervville-r;
+    font-size: 6rem;
+    line-height: normal;
+    color: #DC4040;
+    text-align: start;
+}
+
+.sectionTitleCN{
+    font-family: sourceSongti-b;
+    font-size: 2.5rem;
+    line-height: normal;
+    color: #DC4040;
+    text-align: start;
+    letter-spacing: 38.8px;
+    margin: 47px 0 0 48px;
+}
+
+/* classes to build entries */
+
+.entry{
+    width: 100%;
+    border-bottom: 1.5px solid #DC4040;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.single{
+    padding: 28px 0 28px 0;
+}
+
+.multi{
+    padding: 32px 0 32px 0;
+}
+
+.entryContainer .entry:last-of-type{
+    border: none;
+}
+
+.number{
+    flex: 0 0 122px;
+    padding-right: 48px;
+    text-align: right;
+    font-family: sourceSongti-sb;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: #DC4040;
+}
+
+.entryBody{
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.entryBody + .entryBody{
+    margin-top: 32px;
+}
+
+.entryTitle{
+    flex: 1 1 auto;
+    max-width: 67%;
+    font-family: sourceSongti-sb;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: black;
+    text-align: left;
+    pointer-events: auto;
+    transition-duration: 0.15s;
+}
+
+.entryTitle:hover{
+    color: #DC4040;
+}
+
+.entryAuthor{
+    flex: 1 1 auto;
+    max-width: 50%;
+    padding-right: 60px;
+    font-family: sourceSongti-r;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: black;
+    text-align: right;
+}
+
+/* extra for entries with multiple sub-entries */
+
+.subEntry{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.summary{
+    width: 100%;
+    font-family: sourceSongti-r;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding: 4px 60px 28px 0;
+}
+
+.subNumber{
+    flex: 0 0 48px;
+    padding: 4px 24px 0 0;
+    font-family: sourceSongti-r;
+    font-size: 1.25rem;
+    line-height: normal;
+    color: #DC4040;
+}
+
+/* for entries on more info page */
+
+.exhibitDisclaimer{
+    font-family: sourceSongti-r;
+    font-size: 1rem;
+    line-height: normal;
+    color: black;
+    text-align: left;
+    margin: -6px 0 11px 3px;
+}
+
+.readingTitle{
+    padding-right: 60px;
+    font-family: sourceSongti-sb;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: black;
+    text-align: left;
+    pointer-events: auto;
+    transition-duration: 0.15s;
+}
+
+.readingTitle:hover{
+    color: #DC4040;
+}
+
+.readingNotes{
+    padding: 5px 60px -1px 0;
+    font-family: sourceSongti-r;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    color: black;
+    text-align: left;
+}
+
+.languageTag{
+    display: inline-block;
+    padding: 2px 7px 5px 7px;
+    margin-left: 15px;
+    position: relative;
+    bottom: 3.5px;
+    border: 1px solid #DC4040;
+    border-radius: 6px;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #DC4040;
+}
+
+.languageTag + .languageTag{
+    margin-left: 6px;
+}
+
+.pureText{
+    padding: 32px 60px 32px 60px;
+    font-family: sourceSongti-r;
+    font-size: 1.5rem;
+    line-height: 42px;
+    color: black;
+}
+
+.highlight{
+    font-family: sourceSongti-b;
+    color: #DC4040;
+}
+
