@@ -54,14 +54,14 @@
     font-family: "sourceHeiti-h";
     src: url("../typefaces/SourceHeiti/SourceHanSansSC-Heavy.otf") format("opentype");
 }
-
+/* 
 @media (1350px <= width < 1690px){
     html{font-size: calc(0.8 * 16px);}
 }
 
 @media (width < 1350px){
     html{font-size: calc(0.7 * 16px);}
-}
+} */
 
 body{
     background-color: #FFF0CC;
