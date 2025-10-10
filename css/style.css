@@ -1,9 +1,13 @@
-@import "tailwindcss";
+@import "tailwindcss"; 
 
 :root {
     --spacing: 1px;
     --refpx: 16; /*value used as a reference to convert some pixel values into rem values. DO NOT change.*/
 }
+/* 
+html{
+    font-size: clamp(12px, 100vw/120, 16px);
+} */
 
 @font-face{
     font-family: "baskervville-r";
@@ -61,8 +65,8 @@
 
 @media (width < 1350px){
     html{font-size: calc(0.7 * 16px);}
-} */
-
+} 
+*/
 body{
     background-color: #FFF0CC;
     padding: 0;
@@ -128,6 +132,23 @@ h2{
     margin: calc(1rem * 46.5/var(--refpx)) 0 0 calc(1rem * 27/var(--refpx));
     transition-duration: 0.55s;
     transition-timing-function: ease;
+}
+
+@media (max-width: 1689px){
+    /* .navBarTitleEN{
+        font-size: 2rem;
+        width: 262px;
+        margin: 11px 0 0 1.875rem;
+    } */
+    .navBarTitleCH{
+        display: none;
+    }
+}
+
+@media (max-width: 1325px){
+    .navBarTitleEN{
+        margin: 23px 0 0 1.875rem;
+    }
 }
 
 #pageTitle1, #pageTitle2{
@@ -327,12 +348,17 @@ a{
     color: black;
 }
 
-@media (width < 1520px){
+@media (width < 1600px){
     .textHalf br{
         display: none;
     }
     .textHalf{
         width: 90%;
+        height: 42.5vh
+    }
+    .graphicHalf{
+        width: 90vw !important;
+        height: 57.5vh;
     }
 }
 
@@ -348,6 +374,7 @@ sup{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    text-align: center;
     height: 62.5vh;
     width: 100vw;
 }
@@ -361,8 +388,8 @@ sup{
     .note{
         font-family: baskervville-r;
         font-size: 1.5rem;
-        line-height: 3rem;
-        margin-top: -1px;
+        line-height: 2.25rem;
+        margin-top: 5px;
     }
 }
 
@@ -371,6 +398,50 @@ sup{
 .dots{
     opacity: 0;
     transition-duration: 1.1s;
+    aspect-ratio: 1000/98;
+    height: 98px;
+}
+
+.dots-full{
+    aspect-ratio: 1000/330;
+    height: 330px;
+}
+
+.dots-special1{
+    opacity: 0;
+    transition-duration: 1.1s;
+    position: absolute;
+    top: calc(10vh + 58px);
+    aspect-ratio: 424/40;
+    height: 40px;
+}
+
+.dots-special2{
+    opacity: 0;
+    transition-duration: 1.1s;
+    position: absolute;
+    top: calc(10vh + 58px);
+    margin-right: 32px;
+    aspect-ratio: 840/98;
+    height: 98px;
+}
+
+@media (width < 1600px){
+    .dots{
+        height: calc(0.75 * 98px);
+    }
+    .dots-full{
+        height: calc(0.75 * 330px);
+    }
+    .dots-special1{
+        height: calc(0.75 * 40px);
+        top: calc(10vh + 0.75 * 58px);
+    }
+    .dots-special2{
+        height: calc(0.75 * 98px);
+        top: calc(10vh + 0.75 * 58px);
+        margin-right: calc(0.75 * 32px);
+    }
 }
 
 .scrollYindicator{
@@ -397,7 +468,7 @@ sup{
     font-family: baskervville-r;
     font-size: 1.5rem;
     line-height: 2.25rem;
-    text-align: justify;
+    text-align: center;
     color: black;
 }
 
@@ -418,7 +489,7 @@ p + p{
 
 /* restart button */
 
-.restartButton{
+.floatingButton{
     position: fixed;
     left: 66px;
     bottom: 41px;
@@ -427,25 +498,24 @@ p + p{
     border: 2px solid #DC4040;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
+    align-items: center;
     transition-duration: 0.15s;
     opacity: 0;
 }
 
-.restartButton:hover{
+.floatingButton:hover{
     width: 199px;
     height: 116px;
     border: 3px solid #4D3636;
     transition-duration: 0.15s;
 }
 
-.restartButton:hover .rsb1{
+.floatingButton:hover .rsb1{
     color: #4D3636;
     transition-duration: 0.15s;
 }
 
-.restartButton:hover .rsb2{
+.floatingButton:hover .rsb2{
     color: #4D3636;
     transition-duration: 0.15s;
 }

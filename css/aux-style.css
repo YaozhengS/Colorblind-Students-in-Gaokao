@@ -42,6 +42,15 @@ body{
     margin-bottom: 20px;
 }
 
+@media (max-width: 1540px){
+    #infoPageTitleContainer{
+        flex-direction: column;
+    }
+    #infoPageTitleCN{
+        margin: 0 0 0 3px !important;
+    }
+}
+
 .entryContainer{
     position: relative;
     width: 100%;
@@ -129,6 +138,10 @@ body{
 
 .entryTitle:hover{
     color: #DC4040;
+}
+
+.entrySpacer{
+    flex: 0 0 60px;
 }
 
 .entryAuthor{

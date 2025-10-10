@@ -14,7 +14,7 @@ const scroll = new LocomotiveScroll({
 });
 
 function restart(){
-    document.querySelector(".restartButton").addEventListener("click", () =>{
+    document.querySelector("#restartButton").addEventListener("click", () =>{
         location.reload();
         console.log("page refreshed");
     })
@@ -51,7 +51,7 @@ function autoRestart(){
 scroll.on("call", (func, direction, obj) =>{
     const title1 = document.getElementById("pageTitle1");
     const title2 = document.getElementById("pageTitle2");
-    const button = document.querySelector(".restartButton");
+    const button = document.querySelector("#restartButton");
 
     if(func == "atOpeningPage"){
         title1.style.opacity = "0";

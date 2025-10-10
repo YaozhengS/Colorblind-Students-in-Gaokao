@@ -1,7 +1,9 @@
 {
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.6",
-    "locomotive-scroll": "^4.1.4",
-    "tailwindcss": "^4.1.6"
+    "@tailwindcss/cli": "^4.1.14",
+    "locomotive-scroll": "^4.1.4"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.14"
   }
 }
