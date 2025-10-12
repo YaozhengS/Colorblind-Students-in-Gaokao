@@ -11,22 +11,22 @@ html{
 
 @font-face{
     font-family: "baskervville-r";
-    src: url("../typefaces/Baskervville/Baskervville-Regular.ttf") format("truetype");
+    src: url("https://cdn.jsdelivr.net/gh/YaozhengS/Colorblind-Students-in-Gaokao@main/typefaces/Baskervville/Baskervville-Regular.ttf") format("truetype");
 }
 
 @font-face{
     font-family: "baskervville-i";
-    src: url("../typefaces/Baskervville/Baskervville-Italic.ttf") format("truetype");
+    src: url("https://cdn.jsdelivr.net/gh/YaozhengS/Colorblind-Students-in-Gaokao@main/typefaces/Baskervville/Baskervville-Italic.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "openBaskerville-r";
-    src: url("../typefaces/OpenBaskerville/OpenBaskerville-0.0.53.otf") format("opentype");
+    src: url("https://cdn.jsdelivr.net/gh/YaozhengS/Colorblind-Students-in-Gaokao@main/typefaces/OpenBaskerville/OpenBaskerville-0.0.53.otf") format("opentype");
 }
 
 @font-face {
     font-family: "libreBaskerville-b";
-    src: url("../typefaces/Libre_Baskerville/LibreBaskerville-Bold.ttf") format("truetype");
+    src: url("https://cdn.jsdelivr.net/gh/YaozhengS/Colorblind-Students-in-Gaokao@main/Libre_Baskerville/LibreBaskerville-Bold.ttf") format("truetype");
 }
 
 @font-face {
