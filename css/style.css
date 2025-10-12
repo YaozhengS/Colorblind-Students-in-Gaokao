@@ -31,33 +31,58 @@ html{
 
 @font-face {
     font-family: "sourceSongti-r";
-    src: url("../typefaces/SourceSongti/SourceHanSerifCN-Regular.otf") format("opentype");
+    src: url("https://cdn.jsdelivr.net/gh/YaozhengS/Colorblind-Students-in-Gaokao@main/typefaces/SourceSongti/SourceHanSerifCN-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: "sourceSongti-m";
-    src: url("../typefaces/SourceSongti/SourceHanSerifCN-Medium.otf") format("opentype");
+    src: url("https://cdn.jsdelivr.net/gh/YaozhengS/Colorblind-Students-in-Gaokao@main/typefaces/SourceSongti/SourceHanSerifCN-Medium.otf") format("opentype");
 }
 
 @font-face {
     font-family: "sourceSongti-sb";
-    src: url("../typefaces/SourceSongti/SourceHanSerifCN-SemiBold.otf") format("opentype");
+    src: url("https://cdn.jsdelivr.net/gh/YaozhengS/Colorblind-Students-in-Gaokao@main/typefaces/SourceSongti/SourceHanSerifCN-SemiBold.otf") format("opentype");
 }
 
 @font-face {
     font-family: "sourceSongti-b";
-    src: url("../typefaces/SourceSongti/SourceHanSerifCN-Bold.otf") format("opentype");
+    src: url("https://cdn.jsdelivr.net/gh/YaozhengS/Colorblind-Students-in-Gaokao@main/typefaces/SourceSongti/SourceHanSerifCN-Bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: "sourceHeiti-n";
-    src: url("../typefaces/SourceHeiti/SourceHanSansCN-Normal.otf") format("opentype");
+    src: url("https://cdn.jsdelivr.net/gh/YaozhengS/Colorblind-Students-in-Gaokao@main/typefaces/SourceHeiti/SourceHanSansCN-Normal.otf") format("opentype");
 }
 
 @font-face{
     font-family: "sourceHeiti-h";
-    src: url("../typefaces/SourceHeiti/SourceHanSansCN-Heavy.otf") format("opentype");
+    src: url("https://cdn.jsdelivr.net/gh/YaozhengS/Colorblind-Students-in-Gaokao@main/typefaces/SourceHeiti/SourceHanSansCN-Heavy.otf") format("opentype");
 }
+
+/* @font-face {
+    font-family: "sourceSongti-r";
+    src: url("../typefaces/SourceSongti/SourceHanSerifCN-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "sourceSongti-m";
+    src: url("../typefaces/SourceSongti/SourceHanSerifCN-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: "sourceSongti-sb";
+    src: url("../typefaces/SourceSongti/SourceHanSerifCN-SemiBold.otf") format("opentype");
+}
+@font-face {
+    font-family: "sourceSongti-b";
+    src: url("../typefaces/SourceSongti/SourceHanSerifCN-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "sourceHeiti-n";
+    src: url("../typefaces/SourceHeiti/SourceHanSansCN-Normal.otf") format("opentype");
+}
+@font-face{
+    font-family: "sourceHeiti-h";
+    src: url("../typefaces/SourceHeiti/SourceHanSansCN-Heavy.otf") format("opentype");
+} */
 
 /* @media (1350px <= width < 1690px){
     html{font-size: calc(0.8 * 16px);}

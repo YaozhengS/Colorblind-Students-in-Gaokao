@@ -1,0 +1,14 @@
+# Ignore these files during build
+node_modules/
+.DS_Store
+
+dist/
+build/
+
+*.log
+*.tmp
+*.cache
+
+.env
+.env.local
+.env.production
